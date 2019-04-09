@@ -1,0 +1,4 @@
+services:
+  common_body_class.repository:
+    class: Drupal\common_body_class\BodyClassRepository
+    arguments: ['@entity_type.manager']

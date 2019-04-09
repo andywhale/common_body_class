@@ -1,0 +1,6 @@
+entity.body_class.add_form:
+  route_name: entity.body_class.add_form
+  title: 'Add Common body class'
+  appears_on:
+    - entity.body_class.collection
+

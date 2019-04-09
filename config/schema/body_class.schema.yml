@@ -1,0 +1,18 @@
+common_body_class.body_class.*:
+  type: config_entity
+  label: 'Body class config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    class:
+      type: string
+      label: 'Class'
+    status:
+      type: boolean
+      label: 'Status'
+    uuid:
+      type: string

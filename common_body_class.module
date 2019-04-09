@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Hooks to add the custom classes to a page body class.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function common_body_class_preprocess_html(&$variables) {
+  $classes = \Drupal::service('common_body_class.repository')->getActiveClasses();
+  if ($classes) {
+    $variables['attributes']['class'][] = implode(' ', $classes);
+  }
+}

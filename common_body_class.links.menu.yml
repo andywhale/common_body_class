@@ -1,0 +1,9 @@
+
+# Body class menu items definition
+entity.body_class.collection:
+  title: 'Common body classes'
+  route_name: entity.body_class.collection
+  description: 'Create and manage body classes'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,5 @@
+name: Common Body Class
+type: module
+description: Add a common body class to pages
+core: 8.x
+package: Core
