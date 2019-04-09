@@ -9,5 +9,27 @@ use Drupal\Core\Config\Entity\ConfigEntityInterface;
  */
 interface BodyClassInterface extends ConfigEntityInterface {
 
-  // Add get/set methods for your configuration properties here.
+  /**
+   * Check the status to see if this is enabled.
+   *
+   * @return bool
+   */
+  public function isEnabled();
+
+  /**
+   * Get the body class class.
+   *
+   * @return string
+   */
+  public function getClass();
+
+  /**
+   * Set the body class class.
+   *
+   * @param string $class  The body class class
+   *
+   * @return self
+   */
+  public function setClass(string $class);
+
 }

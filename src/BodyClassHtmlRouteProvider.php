@@ -14,13 +14,4 @@ use Symfony\Component\Routing\Route;
  */
 class BodyClassHtmlRouteProvider extends AdminHtmlRouteProvider {
 
-  /**
-   * {@inheritdoc}
-   */
-  public function getRoutes(EntityTypeInterface $entity_type) {
-    $collection = parent::getRoutes($entity_type);
-
-    return $collection;
-  }
-
 }

@@ -62,31 +62,23 @@ class BodyClass extends ConfigEntityBase implements BodyClassInterface {
   protected $class;
 
   /**
-   * Check the status to see if this is enabled.
-   *
-   * @return bool
+   * {@inheritdoc}
    */
   public function isEnabled() {
     return ($this->status) ? TRUE : FALSE;
   }
 
   /**
-   * Get the body class class
-   *
-   * @return string
-   */ 
+   * {@inheritdoc}
+   */
   public function getClass()
   {
     return $this->class;
   }
 
   /**
-   * Set the body class class
-   *
-   * @param string $class  The body class class
-   *
-   * @return self
-   */ 
+   * {@inheritdoc}
+   */
   public function setClass(string $class)
   {
     $this->class = $class;
